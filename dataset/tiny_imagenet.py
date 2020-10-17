@@ -53,7 +53,7 @@ class TinyImageNet(Dataset):
 
         # read all images into torch tensor in memory to minimize disk IO overhead
         if self.in_memory:
-            self.images = [self.read_image_A(path) for path in self.image_paths]
+            self.images = [self.read_image(path) for path in self.image_paths]
 
     def __len__(self):
         return len(self.image_paths)
@@ -64,7 +64,7 @@ class TinyImageNet(Dataset):
         if self.in_memory:
             img = self.images[index]
         else:
-            img = self.read_image_A(file_path)
+            img = self.read_image(file_path)
 
         if self.split == 'test':
             return img
