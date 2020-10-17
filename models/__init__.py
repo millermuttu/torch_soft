@@ -7,3 +7,4 @@ from .networks import *
 from .resnet import *
 from .quiz_dnn import *
 from .assignment11 import *
+from.naiveresnet import *
