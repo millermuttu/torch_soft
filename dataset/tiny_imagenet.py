@@ -53,7 +53,7 @@ class TinyImageNet(Dataset):
 
         # read all images into torch tensor in memory to minimize disk IO overhead
         if self.in_memory:
-            self.images = [self.read_image(path) for path in self.image_paths]
+            self.images = [self.read_image_A(path) for path in self.image_paths]
 
     def __len__(self):
         return len(self.image_paths)
@@ -64,7 +64,7 @@ class TinyImageNet(Dataset):
         if self.in_memory:
             img = self.images[index]
         else:
-            img = self.read_image(file_path)
+            img = self.read_image_A(file_path)
 
         if self.split == 'test':
             return img
@@ -87,3 +87,8 @@ class TinyImageNet(Dataset):
     def read_image(self, path):
         img = Image.open(path)
         return self.transform(img) if self.transform else img
+
+    def read_image_A(self, path):
+        img = Image.open(path)
+        augmented = self.transform(**{'image': img})  # unpacking the dict valus using **
+        return augmented['image'] if self.transform else img
