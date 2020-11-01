@@ -1,4 +1,4 @@
-<p align="center">
+<p align="left">
   <img src="images/logo.png" alt="tensornet" />
   <br />
   <br />
