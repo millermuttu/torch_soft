@@ -7,7 +7,7 @@
   <br />
 </p>
 
-torch_soft is a high level implementatio of pytorch for some of claasification implementation with ease...
+torch_soft is a high level implementation of pytorch for some of claasification implementation with ease...
 
 ## Installation
 
