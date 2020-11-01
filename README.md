@@ -9,6 +9,14 @@
 
 torch_soft is a high level implementatio of pytorch for some of claasification implementation with ease...
 
+## Installation
+
+You can use pip to install torch_soft using pip.
+
+```[bash]
+pip install torch-soft==0.1.1
+```
+
 ## features
 TensorNet currently supports the following features
 - Model architectures
