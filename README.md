@@ -1,5 +1,5 @@
 <p align="left">
-  <img src="images/logo.png" alt="tensornet" />
+  <img src="images/logo.png" alt="torch_soft" />
   <br />
   <br />
   <img src="https://img.shields.io/badge/version-0.1.1-blue.svg" alt="Version">
