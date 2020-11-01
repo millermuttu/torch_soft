@@ -1,8 +1,6 @@
 <p align="center">
   <img src="images/logo.png" alt="tensornet" />
-  <br />
-  <br />
-  <img src="https://img.shields.io/badge/version-0.9.1-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/version-0.1.1-blue.svg" alt="Version">
   <a href="https://github.com/shan18/TensorNet/blob/master/LICENSE"><img src="https://img.shields.io/apm/l/atomic-design-ui.svg?" alt="MIT License"></a>
   <br />
 </p>
