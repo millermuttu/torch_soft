@@ -6,11 +6,6 @@ from setuptools import setup, find_packages
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
 
-def version():
-    with open(os.path.join(base_dir, 'tensornet', '__init__.py')) as f:
-        return re.search(r'^__version__ = [\'"]([^\'"]*)[\'"]', f.read(), re.M).group(1)
-
-
 def readme():
     with open('README.md') as f:
         return f.read()
@@ -23,7 +18,7 @@ def requirements():
 
 setup(
     name='torch_soft',
-    version=version(),
+    version='0.1.1',
     author='mallikarjun sajjan',
     author_email='flyingmuttus1995@gmail.com',
     description='A high-level deep learning library build on top of PyTorch for classification problems...',
